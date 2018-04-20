@@ -1,5 +1,5 @@
 #transcard{
-  background-image: url("./images/reloadablePass.png");
+  background-image: url("images/reloadablePass.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 255px;
@@ -9,7 +9,7 @@
 }
 
 #transticket{
-  background-image: url("./images/transitTicket.png");
+  background-image: url("images/transitTicket.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 290px;
@@ -91,7 +91,7 @@
 
 #dispense
 {
-  background-image: url("./images/ticketDispensing.png");
+  background-image: url("images/ticketDispensing.png");
   background-repeat:no-repeat;
   border: none;
   background-size:100%;
