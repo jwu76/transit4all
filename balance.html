@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
-                <meta charset="utf-8">
-        <title> </title>
-        <script>
-        function back(){
-        window.history.go(-1); 
-            }
-        </script>
-    </head>
-    <body>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-      <link rel="stylesheet" href="mainScreenLayout.css">
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-      <script src="transitsystem.js"></script>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-        <div id="balanceScreen" class="container screen">
-        <div class="row">
-         <div class="col-md-5">
-             <div id="balance">
-             <canvas id="BalanceCanvas" width="300" height="60"></canvas>
-             <form>
-                <div class="form-group">
-                  <label for="current">Current: <input type="text" class="form-control" id="current" value="$"></label>
-                </div>
-                <div class="form-group">
-                  <label for="added">Added: <input type="text" class="form-control" id="added" value="$"></label>
-                </div>
-                <div class="form-group">
-                  <label for="total">Total: <input type="text" class="form-control" id="total" value="$"></label>
-                </div>
-              </form>
-         
-         
-             </div>     
-        </div>
-            <div class="col-md-5">
-                <div class="container" id="numpad">
-                  <div class="btn-group-lg btn-group-vertical btn-group-justified">
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="1"> 1 </button>
-                    </div>
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="4"> 4 </button>
-                    </div>
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="7"> 7 </button>
-                    </div>
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="X"> X
-                      </button>
-                    </div>
-                  </div>
-                   <div class="btn-group-lg btn-group-vertical btn-group-justified">
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="2"> 2 </button>
-                    </div>
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="5"> 5 </button>
-                    </div>
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="8"> 8 </button>
-                    </div>
-                      <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="0">0</button>
-                    </div>
-                  </div>
-                   <div class="btn-group-lg btn-group-vertical btn-group-justified">
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="3"> 3 </button>
-                    </div>
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="6"> 6 </button>
-                    </div>
-                    <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="9"> 9 </button>
-                    </div>
-                     <div class="btn-group-lg">
-                      <button type="button" class="btn btn-primary" id="dot"> . </button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-2" id="col3">
-               <button type="button" class="btn btn-info btn-lg" id="backToHome" onclick="back()">
-                  <i class="material-icons">keyboard_backspace</i>
-                </button>
-                <button type="button" class="btn btn-info btn-lg" id="continue" onclick="location.href='./paymentMethod.html'">
-                  <i class="material-icons">done</i>
-                </button>
-                
-            </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title> </title>
+  <script>
+  function back(){
+    window.history.go(-1);
+  }
+  </script>
+</head>
+<body>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="mainScreenLayout.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="transitsystem.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+  <!-- <div id="balanceScreen" class="container screen"> -->
+    <div class="row">
+      <div id="home_col_ML" class = "col-md-6">
+        <button class = "btn btn-primary" style="margin-top:1%; position: relative; left: 10px; height:60px; width:60px" onclick="back()">
+          <i class="material-icons">&#xE317;</i>
+        </button>
+        <button type = "button" class = "btn btn-primary" style="margin-top: 1%; height:60px; width:60px; position:absolute; right:0px;" onclick="location.href='./transitsystem.html'">
+          <h2><span class = "fas fa-home"></span></h2>
+        </button>
+      </div>
+      <div id = "back_col_ML" class = "col-md-6">
+      </div>
     </div>
-    <script>
-    var bCanvas = document.getElementById("BalanceCanvas");
-    var balancectx = bCanvas.getContext("2d");
-    balancectx.font = "50px Arial";
-    balancectx.fillText("BALANCE",10,50);
-    balancectx.stroke();
-    </script>
-    </body>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <div id="currBalance">
+          <form>
+            <div class="form-group" style="margin-top: 3%; margin-left:20px">
+              <label for="current" style="font-size: 24pt">CURRENT: <input type="text" class="form-control" id="current" value="$-500.00"></label>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="form-group" style="margin-top: 3%; margin-left:20px">
+            <label for="added"style="font-size: 24pt">TO ADD: <input type="text" class="form-control" id="added" value="$"></label>
+          </div>
+          <div class="btn-group-lg btn-group-vertical btn-group-justified" style="margin-left:60px">
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="1"
+               style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> 1 </button>
+            </div>
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="4"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> 4 </button>
+            </div>
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="7"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> 7 </button>
+            </div>
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="X"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> X
+              </button>
+            </div>
+          </div>
+          <div class="btn-group-lg btn-group-vertical btn-group-justified">
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="2"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> 2 </button>
+            </div>
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="5"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> 5 </button>
+            </div>
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="8"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> 8 </button>
+            </div>
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="0"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none">0</button>
+            </div>
+          </div>
+          <div class="btn-group-lg btn-group-vertical btn-group-justified">
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="3"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> 3 </button>
+            </div>
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="6"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> 6 </button>
+            </div>
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="9"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> 9 </button>
+            </div>
+            <div class="btn-group-lg">
+              <button type="button" class="btn btn-primary" id="dot"
+              style="height: 65px; width: 65px; margin-right:5px; margin-bottom: 5px; background-color: #000000; border: none"> . </button>
+            </div>
+          </div>
+        <!-- </div> -->
+    </div>
+    <div class="col-md-4">
+      <div id="Total">
+        <div class="form-group" style="margin-top: 3%; margin-left:20px">
+          <label for="total" style="font-size: 24pt">TOTAL: <input type="text" class="form-control" id="total" value="$"></label>
+        </div><br>
+        <button type= "button" id="Continue_Tim" class = "btn btn-primary" style="height: 80px; width: 300px; margin-top: 10px; margin-left: 20px" onclick="location.href='./paymentMethod.html'">
+          <h2><span style="font-size: 24pt">Continue</span></h2>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script>
+  var bCanvas = document.getElementById("BalanceCanvas");
+  var balancectx = bCanvas.getContext("2d");
+  balancectx.font = "24px Arial";
+  balancectx.fillText("CURRENT",10,50);
+  balancectx.stroke();
+  </script> -->
+</body>
 </html>
