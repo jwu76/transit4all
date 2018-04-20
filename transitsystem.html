@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <link rel="stylesheet" href="mainScreenLayout.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <script src="transitsystem.js"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <title>Transit System</title>
+    </head>
+    <body>
+      <br/>
+      <div class="container screen" id="mainScreen">
+        <div id="mainScreen" class="row">
+            <div class="col-md-4" id="card" style="margin: 0 auto;">
+            	<button type="button" class="btn" id="transcard" onclick="location.href='./ContinueScreen.html'"></button>
+              </div>
+            <div class="cold-md-4" id = "language" style="margin: 0 auto;">
+            	<select id="languages" size="7">
+                <option value="" disabled>Choose a language</option>
+                <option selected>English</option>
+                <option>Spanish</option>
+                <option>Polish</option>
+                <option>Chinese</option>
+                <option>Italian</option>
+                <option>Danish</option>
+                <option>Japanese</option>
+            	</select>
+            </div>
+            <div class="col-md-4" id="ticket" style="margin: 0 auto;">
+          		<button type="button"  class="btn" id="transticket" onclick="location.href='./passScreen.html'"></button>
+              </div>
+        </div>
+      <br/><br/><br/>
+      <div class="row">
+      	<button type="button" class="btn-primary" style="width:800px; height:200px; font-size:50px" id="scan" onclick="location.href='./balance.html'"> SCAN CARD/CHECK BALANCE</button>
+        </div>
+    </div>
+  </body>
+</html>

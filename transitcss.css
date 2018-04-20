@@ -1,0 +1,86 @@
+#cash_CA{
+  width:150px;
+  height:150px;
+  margin-top:80px;
+  font-size: 18pt;
+}
+#card_CA{
+  width:150px;
+  height:150px;
+  margin-left:80px;
+  margin-top:80px;
+  font-size: 18pt;
+}
+
+#Cancel_CA{
+  width:380px;
+  height:75px;
+  margin-top: 50px;
+  font-size: 18pt;
+}
+
+#back_CA{
+  margin-top:1%;
+  position: relative;
+  left: 10px;
+  height: 60px;
+  width: 60px;
+}
+#home_CA{
+  margin-top:1%;
+  position: absolute;
+  right: 0px;
+  width:60px;
+  height:60px;
+}
+
+#textArea1_CA{
+  margin-top: 80px;
+  margin-left: 150px;
+  width: 300px;
+  height: 50px;
+  font-size: 18pt;
+  font-weight: bolder;
+  border: 2px solid black;
+}
+#textArea2_CA{
+  margin-left: 150px;
+  width: 300px;
+  height: 230px;
+  font-size: 16pt;
+  border: 2px solid black;
+}
+
+#cashCardTextArea_CA{
+ margin-top: 1%;
+ margin-bottom: 3%;
+ text-align: center;
+ width: 300px;
+ height: 100px;
+ font-size: 16pt;
+ font-weight: bolder;
+ border: 2px solid black;
+}
+
+#addMoney_CA{
+  background-image: url("./images/cashPayment.png");
+  background-repeat: no-repeat;
+  border: none;
+  background-size:100%;
+  width: 300px;
+  height: 300px;
+}
+
+.center_CA
+{
+  margin-left:38%;
+  margin-top: 5%;
+}
+
+#addCard_CA{
+  background-image: url("./images/payWithCard.gif");
+  background-repeat: no-repeat;
+  background-size:100%;
+  width: 300px;
+  height: 230px;
+}
