@@ -1,38 +1,6 @@
+
 $("document").ready(function() {
-
-    // var back = document.getElementById("backToHome");
-    // $(back).on("click" , function(){
-    //     var x = document.getElementById("mainScreen");
-    //     x.style.display = "block";
-    //     var y = document.getElementById("balanceScreen");
-    //     y.style.display = "none";
-    // });
-
-    //  var ticket = document.getElementById("transticket");
-    // $(back).on("click" , function(){
-    //     var x = document.getElementById("mainScreen");
-    //     x.style.display = "none";
-    //     var y = document.getElementById("");
-    //     y.style.display = "block";
-    // })
-
-    //  var card = document.getElementById("transcard");
-    // $(back).on("click" , function(){
-    //     var x = document.getElementById("mainScreen");
-    //     x.style.display = "none";
-    //     var y = document.getElementById("");
-    //     y.style.display = "block";
-    // })
-
-
-    //  var cont = document.getElementById("continue");
-    //   $(cont).on("click" , function(){
-    //     var x = document.getElementById("");
-    //     x.style.display = "block";
-    //     var y = document.getElementById("balanceScreen");
-    //     y.style.display = "none";
-    // });
-
+    
     var one = document.getElementById("one");
     $(one).on("click", function(){
         var x = document.getElementById("added").value +="1";
@@ -98,11 +66,8 @@ $("document").ready(function() {
 $('.keys').on('click', 'li', function() {
   if(i<4){
     var num = $(this).data('number')
-    //document.getElementById("myPsw").value = num;
 
 $('#myPsw').val($('#myPsw').val() + num);
-    //var x = document.getElementById("#myPsw").value;
-    //document.getElementById("myPsw").innerHTML = num;
     console.log($('#myPsw').val.length);}
   i++;});
 
