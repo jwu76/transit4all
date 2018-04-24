@@ -7,7 +7,7 @@ $("document").ready(function() {
     //     var y = document.getElementById("balanceScreen");
     //     y.style.display = "none";
     // });
-    
+
     //  var ticket = document.getElementById("transticket");
     // $(back).on("click" , function(){
     //     var x = document.getElementById("mainScreen");
@@ -15,7 +15,7 @@ $("document").ready(function() {
     //     var y = document.getElementById("");
     //     y.style.display = "block";
     // })
-    
+
     //  var card = document.getElementById("transcard");
     // $(back).on("click" , function(){
     //     var x = document.getElementById("mainScreen");
@@ -23,8 +23,8 @@ $("document").ready(function() {
     //     var y = document.getElementById("");
     //     y.style.display = "block";
     // })
-    
-    
+
+
     //  var cont = document.getElementById("continue");
     //   $(cont).on("click" , function(){
     //     var x = document.getElementById("");
@@ -32,78 +32,78 @@ $("document").ready(function() {
     //     var y = document.getElementById("balanceScreen");
     //     y.style.display = "none";
     // });
-    
-    var one = document.getElementById("1");
+
+    var one = document.getElementById("one");
     $(one).on("click", function(){
         var x = document.getElementById("added").value +="1";
     });
-    
-    var two = document.getElementById("2");
+
+    var two = document.getElementById("two");
     $(two).on("click", function(){
         var x = document.getElementById("added").value +="2";
     });
-    
-    var three = document.getElementById("3");
+
+    var three = document.getElementById("three");
     $(three).on("click", function(){
         var x = document.getElementById("added").value +="3";
     });
-    
-    var four = document.getElementById("4");
+
+    var four = document.getElementById("four");
     $(four).on("click", function(){
         var x = document.getElementById("added").value +="4";
     });
-    
-    var five = document.getElementById("5");
+
+    var five = document.getElementById("five");
     $(five).on("click", function(){
         var x = document.getElementById("added").value +="5";
     });
-    
-    var six = document.getElementById("6");
+
+    var six = document.getElementById("six");
     $(six).on("click", function(){
         var x = document.getElementById("added").value +="6";
     });
-    
-    var seven = document.getElementById("7");
+
+    var seven = document.getElementById("seven");
     $(seven).on("click", function(){
         var x = document.getElementById("added").value +="7";
     });
-    
-    var eight = document.getElementById("8");
+
+    var eight = document.getElementById("eight");
     $(eight).on("click", function(){
         var x = document.getElementById("added").value +="8";
     });
-    
-    var nine = document.getElementById("9");
+
+    var nine = document.getElementById("nine");
     $(nine).on("click", function(){
         var x = document.getElementById("added").value +="9";
     });
-    
-    var zero = document.getElementById("0");
+
+    var zero = document.getElementById("zero");
     $(zero).on("click", function(){
         var x = document.getElementById("added").value +="0";
     });
-    
+
     var dot = document.getElementById("dot");
     $(dot).on("click", function(){
         var x = document.getElementById("added").value +=".";
     });
-    
-    var cancel = document.getElementById("X");
+
+    var cancel = document.getElementById("clr");
     $(cancel).on("click", function(){
         var x = document.getElementById("added").value ="$";
     });
-    
+
 //number pad functions
     var i = 0;
 $('.keys').on('click', 'li', function() {
   if(i<4){
     var num = $(this).data('number')
     //document.getElementById("myPsw").value = num;
-    
+
 $('#myPsw').val($('#myPsw').val() + num);
     //var x = document.getElementById("#myPsw").value;
     //document.getElementById("myPsw").innerHTML = num;
     console.log($('#myPsw').val.length);}
   i++;});
- 
+
 });

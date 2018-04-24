@@ -1,3 +1,5 @@
+/*transitsystem.html css start*/
+
 #transcard{
   background-image: url("images/reloadablePass.png");
   background-repeat: no-repeat;
@@ -5,7 +7,6 @@
   height: 255px;
   width: 400px;
   border: none;
-  margin: 0 auto 0 auto;
 }
 
 #transticket{
@@ -15,36 +16,106 @@
   height: 290px;
   width: 400px;
   border: none;
-  margin: 0 auto 0 auto;
 }
-#card, #ticket
-{
-  align-self: center;
-}
-#languages
+
+/* #languages
 {
   height: auto;
   width: auto;
   font-size: 16px;
   margin: auto;
+} */
+
+#card, #ticket, #language
+{
+  text-align: center;
+  align-self: center;
 }
 
 #scan{
-  font-size: 24px;
-  margin: 0 auto 0 auto;
-  height: 100px;
-  width: 600px;
+  font-size: 40px;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 50px 100px;
 }
 
-#backToHome{
+.btn-group-vertical button
+{
+  border: 1px solid white;
+  border-right: none;
+  padding: 30px 50px;
+  font-size: 18pt;
+  width: 100%;
+}
+/*transitsystem.html css end*/
+
+/*balance.html css start*/
+#backButton
+{
+  margin-top:1%;
+  position: relative;
+  left: 10px;
+  height:60px;
+  width:60px;
+}
+
+#homeButton
+{
+  margin-top: 1%;
+  height:60px;
+  width:60px;
+  position:absolute;
+  right:0px;
+}
+
+#currentForm, #toAddForm, #totalForm
+{
+   margin-top: 8%;
+   margin-left:20px;
+}
+
+#currentLable, #toAddLable, #totalLable
+{
+  font-size: 24pt;
+}
+
+#currentInput, #added, #total
+{
   height: 50px;
-  width: 150px;
+  width: 300px;
+  font-size: 18pt;
+  background-color: white;
 }
 
-#BalanceCanvas{
+#balanceNumPad
+{
+   margin-left:65px;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #clr, #dot
+{
+  height: 65px;
+  width: 65px;
+  background-color: #000000;
+  font-size: 20pt;
+  text-align: center;
+}
+
+#Continue_Tim
+{
+   height: 80px;
+   width: 300px;
+   margin-top: 10px;
+   margin-left: 20px;
+   font-size: 30pt;
+}
+
+/*balance.html css end*/
+
+/* #BalanceCanvas{
   margin: 0 auto 0 auto;
   border:1px solid #000000;
-}
+} */
 
 #balances{
   margin-top: 20px;
