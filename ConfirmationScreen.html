@@ -3,16 +3,17 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="tim.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script>
               function back(){
-        window.location.href="./paymentMethod.html"
+        window.history.go(-1);
             }
     </script>
     <script src="timscripts.js"></script>
@@ -24,44 +25,46 @@
   </head>
   <body>
 
-<div class="col-md-6" ><button type="button" class="btn btn-primary" style="float:left" onclick="back()">
-  <i class="material-icons">keyboard_backspace</i>
-</button></div>
+
 
 <div >
-  
     <!-- Confirmation Reciept Screen -->
+    <button class = "btn btn-primary" style="margin-top:.5%; position: relative; left: 10px; height:60px; width:60px right:0px; padding: 0px 15px" onclick="back()">
+      <i class="material-icons">&#xE317;</i>
+    </button>
+    <button type = "button" class = "btn btn-primary" style="margin-top: .5%; height:60px; width:60px; position:absolute; left:900px;" onclick="location.href='./transitsystem.html'">
+      <h2><span class = "fas fa-home"></span></h2>
+    </button>
     <div class="container">
-      <div class="row">
-<div class="col-md-6" ><button type="button" class="btn btn-primary" style="float:right;" onclick="location.href='./transitsystem.html'">
-  <i class="material-icons">home</i>
-</button></div>
-        
+
+
+
+      <div id = "back_col_ML" class = "col-md-6">
 </div>
 <div class="row">
-        <div style="text-align:center" class="col-md-6" id="firstColumn">
+        <div style="text-align:center; margin-top: 120px" class="col-md-6" id="firstColumn">
           <div>
-          <label>Items</label>
+          <label style = " font-size:36px">Items</label>
           <div>
-          <textarea rows="8" cols="40"></textarea>
+          <textarea style = "font-size: 18px; font-weight: bolder; border: 2px solid black" rows="8" cols="45" readonly ></textarea>
     </div>
           </div>
         </div>
-    
+
         <div style="text-align:center" class="col-md-6" id="lastColumn">
-          
-          <label style="margin-top:150px">Price:</label>
-          
-    
+
+          <label style="margin-top:250px; margin-right: 400px; font-size: 48px">Price:</label>
+
+
         </div>
       </div> <!-- class="row" -->
       <div class="row">
           <div style="text-align:center" class="col-md-6" id="lastColumn">
-              <button  style="margin-top:10px;height:200px;width:200px" type="button" class="btn btn-primary">Cancel</button>
-            </div> 
+              <button  style="margin-top:50px;height:150px;width:400px; font-size: 48px " type="button" class="btn btn-primary">Cancel</button>
+            </div>
           <div style="text-align:center" class="col-md-6" id="lastColumn">
-              <button style="margin-top:10px;height:200px;width:200px" type="button" class="btn btn-primary" onclick="location.href='./dispense.html'">Confirm</button>
-            </div> 
+              <button style="margin-top:50px;height:150px;width:400px; font-size: 48px" type="button" class="btn btn-primary" onclick="location.href='./dispense.html'">Confirm</button>
+            </div>
       </div>
     </div> <!-- class="container" -->
 </div>
