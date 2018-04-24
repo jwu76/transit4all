@@ -106,4 +106,23 @@ $('#myPsw').val($('#myPsw').val() + num);
     console.log($('#myPsw').val.length);}
   i++;});
 
+var addToCard = document.getElementById("doneAdding");
+$(addToCard).on('click', function(){
+  var total= document.getElementById("total");
+  total.value = "$";
+  var current = document.getElementById("currentInput");
+  var currentValue = current.value;
+  var currentValue2 = currentValue.substring(1);
+  var currentFloat = parseFloat(currentValue2);
+  var adding = document.getElementById("added");
+  var addingValue = adding.value;
+  var addingValue2 = addingValue.substring(1);
+  var addingFloat = parseFloat(addingValue2);
+  var totalAmount = currentFloat + addingFloat;
+  var totalAmountFixed = totalAmount.toFixed(2);
+  console.log(totalAmountFixed);
+  total.value += totalAmountFixed;
+});
+
+
 });

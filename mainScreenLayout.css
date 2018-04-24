@@ -171,3 +171,13 @@
   width:334px;
   height:310px;
 }
+
+#doneAdding
+{
+  font-size: 30pt;
+  height: 80px;
+  width: 275px;
+  margin-top: 5%;
+  margin-left: 10%;
+
+}
