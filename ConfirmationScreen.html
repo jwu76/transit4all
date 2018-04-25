@@ -1,32 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="tim.css">
-    <script src="timscripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="tim.css">
+  <script src="timscripts.js"></script>
 
-    <script>
-              function back(){
-        window.history.go(-1);
-            }
-    </script>
-
-
-    <title>Confirmation Screen</title>
-  </head>
-  <body>
+  <script>
+  function back(){
+    window.history.go(-1);
+  }
+  </script>
 
 
+  <title>Confirmation Screen</title>
+</head>
+<body>
 
-<div >
+
+
+  <div >
     <!-- Confirmation Reciept Screen -->
     <button class = "btn btn-primary" style="margin-top:.5%; position: relative; left: 10px; height:60px; width:60px right:0px; padding: 0px 15px" onclick="back()">
       <i class="material-icons">&#xE317;</i>
@@ -39,38 +39,36 @@
 
 
       <div id = "back_col_ML" class = "col-md-6">
-</div>
-<div class="row">
-        <div style="text-align:center; margin-top: 120px" class="col-md-6" id="firstColumn">
+      </div>
+      <div class="row">
+        <div style="text-align:center; margin-top: 5%" class="col-md-6" id="firstColumn">
           <div>
-          <label style = " font-size:36px">Items</label>
-          <div>
-          <textarea style = "font-size: 18px; font-weight: bolder; border: 2px solid black" rows="8" cols="45" readonly ></textarea>
-    </div>
+            <label style = " font-size:36px">Items</label>
+            <div>
+              <textarea style = "font-size: 18px; font-weight: bolder; border: 2px solid black" rows="8" cols="45" readonly ></textarea>
+            </div>
           </div>
         </div>
 
         <div style="text-align:center" class="col-md-6" id="lastColumn">
 
-          <label style="margin-top:250px; margin-right: 400px; font-size: 48px">Price:</label>
-
-
+          <label style="margin-top:20%; margin-right: 400px; font-size: 48px">Price:</label>
         </div>
       </div> <!-- class="row" -->
       <div class="row">
-          <div style="text-align:center" class="col-md-6" id="lastColumn">
-              <button  style="margin-top:50px;height:150px;width:400px; font-size: 48px " type="button" class="btn btn-primary">Cancel</button>
-            </div>
-          <div style="text-align:center" class="col-md-6" id="lastColumn">
-              <button style="margin-top:50px;height:150px;width:400px; font-size: 48px" type="button" class="btn btn-primary" onclick="location.href='./dispense.html'">Confirm</button>
-            </div>
+        <div style="text-align:center" class="col-md-6" id="lastColumn">
+          <button  style="margin-top:50px;height:150px;width:400px; font-size: 48px " type="button" class="btn btn-primary">Cancel</button>
+        </div>
+        <div style="text-align:center" class="col-md-6" id="lastColumn">
+          <button style="margin-top:50px;height:150px;width:400px; font-size: 48px" type="button" class="btn btn-primary" onclick="location.href='./dispense.html'">Confirm</button>
+        </div>
       </div>
     </div> <!-- class="container" -->
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  </body>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -35,13 +35,13 @@
 #scan{
   font-size: 40px;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: 5%;
   padding: 50px 100px;
 }
 
 #languageButtons1 button
 {
-  padding: 30px 52px;
+  padding: 25px 30px;
   font-size: 20pt;
   width: 100%;
   margin-top: 5%;
@@ -49,7 +49,7 @@
 }
 #languageButtons2 button
 {
-  padding: 30px 52px;
+  padding: 25px 30px;
   font-size: 20pt;
   width: 100%;
   margin-top: 5%;

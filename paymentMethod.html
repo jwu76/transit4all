@@ -3,7 +3,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <script>
   function back(){
     window.history.go(-1);
@@ -32,12 +32,16 @@
     <div class="col-md-6">
     </div>
   </div>
+
   <div class="row">
-    <div class="col-md-6">
-        <input id = "textArea1_CA" readonly value="Item"> </input><br>
-        <input id = "textArea2_CA" readonly value="1 Ride Pass"> </input>
+    <div style="text-align:center; margin-top: 100px"  class="col-md-6">
+      <label style = " font-size:36px">Items</label>
+      <div>
+        <textarea style = "font-size: 18px; font-weight: bolder; border: 5px solid black" rows="8" cols="45" readonly ></textarea>
+      </div>
     </div>
-    <div class="col-md-6">
+
+    <div style="text-align:center; margin-top: 160px" class="col-md-6">
       <button  id ="cash_CA" class="btn btn-primary" onclick="location.href='./cashPayment.html'">Cash</button>
       <button  id = "card_CA" class="btn btn-primary" onclick="location.href='./cardPayment.html'">Card</button><br>
       <button id="Cancel_CA" class= "btn btn-primary">Cancel</button>

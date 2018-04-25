@@ -1,14 +1,14 @@
 #cash_CA{
   width:150px;
   height:150px;
-  margin-top:80px;
+  /* margin-top:80px; */
   font-size: 18pt;
 }
 #card_CA{
   width:150px;
   height:150px;
   margin-left:80px;
-  margin-top:80px;
+  /* margin-top:80px; */
   font-size: 18pt;
 }
 
