@@ -7,13 +7,12 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="tim.css">
-  <script src="timscripts.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
-  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="tim.css">
+  <script src="timscripts.js"></script>
 
   <title>Card Pin</title>
 </head>
@@ -48,15 +47,16 @@
                 <li data-number='7'>7</li>
                 <li data-number='8'>8</li>
                 <li data-number='9'>9</li>
-                <li style="background-color:rgb(255,255,255); color:#FFF; border: none"></li>
+                <li class="disabled"></li>
                 <li data-number='0'>0</li>
+                <li class="disabled"></li>
               </ol>
             </div>
             <script>
             var i = 0;
             $('.keys').on('click', 'li', function() {
               if(i<4){
-                var num = $(this).data('number')
+                var num = $(this).data('number');
                 //document.getElementById("myPsw").value = num;
 
                 $('#myPsw').val($('#myPsw').val() + num);
@@ -66,12 +66,11 @@
               }
               i++;
             });
-            
-             function cancel(){
+            function cancel(){
               document.getElementById("myPsw").value = "";
-               i = 0;
+              i = 0;
             };
-            //var pin = document.getElementById("myPsw").value.length;
+            // //var pin = document.getElementById("myPsw").value.length;
             function enter(){
               if(i == 4 ){
                 document.getElementById("tenter").disabled = false;
@@ -90,10 +89,10 @@
           </div>
         </div>
         <div class="col-md-4" style="text-align:left">
-          <input type="password" id="myPsw" style="font-size:100px;width:240px;height:100px; text-align:center; margin-top: 30%; margin-bottom: 20px" maxlength="4" readonly><br>
-          <button type="button" id="clear" class="btn btn-primary" style="margin-bottom: 20px;font-size:30px;width:180px;height:60px" onclick="cancel()">Clear</button><br>
-          <button id="tenter" type="button" class="btn btn-primary" style="margin-bottom: 20px;font-size:30px;width:180px;height:60px"
-          onclick="enter()">Enter</button><br>
+          <input type="password" id="myPsw" maxlength="4" readonly><br>
+          <button id="tenter" type="button" class="btn btn-primary" onclick="enter()">Enter</button><br>
+          <button type="button" id="clear" class="btn btn-primary" onclick="cancel()">Clear</button><br>
+          <button id="tcancel" type="button" class="btn btn-primary" onclick="back()">Cancel</button><br>
         </div>
       </div>
     </div>

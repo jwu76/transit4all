@@ -5,6 +5,7 @@ $("document").ready(function() {
     $(one).on("click", function(){
         var x = document.getElementById("added").value ="$1";
     });
+    
     var one = document.getElementById("five");
     $(five).on("click", function(){
         var x = document.getElementById("added").value ="$5";

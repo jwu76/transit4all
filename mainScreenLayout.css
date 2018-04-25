@@ -112,7 +112,6 @@
 #currentCol, #toAddCol, #totalCol
 {
   text-align: center;
-  /* align-self: center; */
 }
 
 #toAddButtons1 button
@@ -140,7 +139,7 @@
   margin-top: 5%;
 }
 
-#Continue_Tim
+#Continue_Tim, #Cancel_Tim
 {
    height: 80px;
    width: 300px;
