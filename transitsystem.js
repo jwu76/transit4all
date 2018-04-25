@@ -21,7 +21,23 @@ $("document").ready(function() {
         var x = document.getElementById("added").value ="$20";
     });
 
+var cont = document.getElementById("Continue_Tim");
+$(cont).on('click', function(){
+    window.location.href = "./paymentMethod.html";
+    var add = document.getElementById("added");
+    add.value = "$";
+    var total = document.getElementById("total");
+    total.value = "$";
+});
 
+var cancel = document.getElementById("Cancel_Tim");
+$(cancel).on('click', function(){
+    window.location.href = "./transitsystem.html";
+    var add = document.getElementById("added");
+    add.value = "$";
+    var total = document.getElementById("total");
+    total.value = "$";
+});
     // var two = document.getElementById("two");
     // $(two).on("click", function(){
     //     var x = document.getElementById("added").value +="2";
