@@ -37,18 +37,18 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4" id="currentCol">
             <div class="form-group" id="currentForm">
               <label id ="currentLable">CURRENT: <input type="text" class="form-control" id="currentInput" value="$10.00" readonly></label>
             </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4" id="toAddCol">
           <div class="form-group" id="toAddForm">
             <label id="toAddLable">TO ADD: <input type="text" class="form-control" id="added" value="$"></label>
           </div>
 
-          <div class="btn-group-lg btn-group-vertical btn-group-justified" id="balanceNumPad">
+          <!-- <div class="btn-group-lg btn-group-vertical btn-group-justified" id="balanceNumPad">
             <div class="btn-group-lg">
               <button type="button" class="btn btn-primary" id="one"> 1 </button>
             </div>
@@ -90,15 +90,22 @@
             <div class="btn-group-lg">
               <button type="button" class="btn btn-primary" id="dot"> . </button>
             </div>
+          </div> -->
+          <div class="btn-group-vertical" id="toAddButtons1">
+            <button type="button" class="btn-primary" id="one">$1</button>
+            <button type="button" class="btn-primary" id="ten">$10</button>
           </div>
-          
-          <div class="row">
-            <button type="button" class="btn btn-primary" id="doneAdding">Done Adding</button>
+          <div class="btn-group-vertical" id="toAddButtons2">
+            <button type="button" class="btn-primary" id="five">$5</button>
+            <button type="button" class="btn-primary" id="twenty">$20</button>
           </div>
+          <br>
+          <button type="button" class="btn btn-primary" id="doneAdding">Done Adding</button>
+
         <!-- </div> -->
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4" id="totalCol">
         <div class="form-group" id="totalForm">
           <label id="totalLable">TOTAL: <input type="text" class="form-control" id="total" value="$" readonly></label>
         </div>

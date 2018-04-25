@@ -1,65 +1,80 @@
 
 $("document").ready(function() {
-    
+
     var one = document.getElementById("one");
     $(one).on("click", function(){
-        var x = document.getElementById("added").value +="1";
+        var x = document.getElementById("added").value ="$1";
     });
-
-    var two = document.getElementById("two");
-    $(two).on("click", function(){
-        var x = document.getElementById("added").value +="2";
-    });
-
-    var three = document.getElementById("three");
-    $(three).on("click", function(){
-        var x = document.getElementById("added").value +="3";
-    });
-
-    var four = document.getElementById("four");
-    $(four).on("click", function(){
-        var x = document.getElementById("added").value +="4";
-    });
-
-    var five = document.getElementById("five");
+    var one = document.getElementById("five");
     $(five).on("click", function(){
-        var x = document.getElementById("added").value +="5";
+        var x = document.getElementById("added").value ="$5";
     });
 
-    var six = document.getElementById("six");
-    $(six).on("click", function(){
-        var x = document.getElementById("added").value +="6";
+    var one = document.getElementById("ten");
+    $(ten).on("click", function(){
+        var x = document.getElementById("added").value ="$10";
     });
 
-    var seven = document.getElementById("seven");
-    $(seven).on("click", function(){
-        var x = document.getElementById("added").value +="7";
+    var one = document.getElementById("twenty");
+    $(twenty).on("click", function(){
+        var x = document.getElementById("added").value ="$20";
     });
 
-    var eight = document.getElementById("eight");
-    $(eight).on("click", function(){
-        var x = document.getElementById("added").value +="8";
-    });
 
-    var nine = document.getElementById("nine");
-    $(nine).on("click", function(){
-        var x = document.getElementById("added").value +="9";
-    });
-
-    var zero = document.getElementById("zero");
-    $(zero).on("click", function(){
-        var x = document.getElementById("added").value +="0";
-    });
-
-    var dot = document.getElementById("dot");
-    $(dot).on("click", function(){
-        var x = document.getElementById("added").value +=".";
-    });
-
-    var cancel = document.getElementById("clr");
-    $(cancel).on("click", function(){
-        var x = document.getElementById("added").value ="$";
-    });
+    // var two = document.getElementById("two");
+    // $(two).on("click", function(){
+    //     var x = document.getElementById("added").value +="2";
+    // });
+    //
+    // var three = document.getElementById("three");
+    // $(three).on("click", function(){
+    //     var x = document.getElementById("added").value +="3";
+    // });
+    //
+    // var four = document.getElementById("four");
+    // $(four).on("click", function(){
+    //     var x = document.getElementById("added").value +="4";
+    // });
+    //
+    // var five = document.getElementById("five");
+    // $(five).on("click", function(){
+    //     var x = document.getElementById("added").value +="5";
+    // });
+    //
+    // var six = document.getElementById("six");
+    // $(six).on("click", function(){
+    //     var x = document.getElementById("added").value +="6";
+    // });
+    //
+    // var seven = document.getElementById("seven");
+    // $(seven).on("click", function(){
+    //     var x = document.getElementById("added").value +="7";
+    // });
+    //
+    // var eight = document.getElementById("eight");
+    // $(eight).on("click", function(){
+    //     var x = document.getElementById("added").value +="8";
+    // });
+    //
+    // var nine = document.getElementById("nine");
+    // $(nine).on("click", function(){
+    //     var x = document.getElementById("added").value +="9";
+    // });
+    //
+    // var zero = document.getElementById("zero");
+    // $(zero).on("click", function(){
+    //     var x = document.getElementById("added").value +="0";
+    // });
+    //
+    // var dot = document.getElementById("dot");
+    // $(dot).on("click", function(){
+    //     var x = document.getElementById("added").value +=".";
+    // });
+    //
+    // var cancel = document.getElementById("clr");
+    // $(cancel).on("click", function(){
+    //     var x = document.getElementById("added").value ="$";
+    // });
 
 //number pad functions
     var i = 0;

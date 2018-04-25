@@ -39,13 +39,21 @@
   padding: 50px 100px;
 }
 
-.btn-group-vertical button
+#languageButtons1 button
 {
-  border: 1px solid white;
-  border-right: none;
-  padding: 30px 50px;
-  font-size: 18pt;
+  padding: 30px 52px;
+  font-size: 20pt;
   width: 100%;
+  margin-top: 5%;
+  margin-right: 2.5%
+}
+#languageButtons2 button
+{
+  padding: 30px 52px;
+  font-size: 20pt;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 2.5%;
 }
 /*transitsystem.html css end*/
 
@@ -71,12 +79,13 @@
 #currentForm, #toAddForm, #totalForm
 {
    margin-top: 8%;
-   margin-left:20px;
+   margin-left: auto;
 }
 
 #currentLable, #toAddLable, #totalLable
 {
   font-size: 24pt;
+  text-align: left;
 }
 
 #currentInput, #added, #total
@@ -87,26 +96,56 @@
   background-color: white;
 }
 
-#balanceNumPad
+/* #balanceNumPad
 {
    margin-left:65px;
-}
+} */
 
-#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #clr, #dot
+/* #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #clr, #dot
 {
   height: 65px;
   width: 65px;
   background-color: #000000;
   font-size: 20pt;
   text-align: center;
+} */
+#currentCol, #toAddCol, #totalCol
+{
+  text-align: center;
+  /* align-self: center; */
+}
+
+#toAddButtons1 button
+{
+  padding: 30px 52px;
+  font-size: 20pt;
+  width: 100%;
+  margin-top: 5%;
+  margin-right: 2.5%;
+}
+#toAddButtons2 button
+{
+  padding: 30px 52px;
+  font-size: 20pt;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 2.5%;
+}
+
+#doneAdding
+{
+  font-size: 30pt;
+  height: 80px;
+  width: 300px;
+  margin-top: 5%;
 }
 
 #Continue_Tim
 {
    height: 80px;
    width: 300px;
-   margin-top: 10px;
-   margin-left: 20px;
+   margin-top: 5%;
+   /* margin-left: 20px; */
    font-size: 30pt;
 }
 
@@ -170,14 +209,4 @@
   margin-top:5%;
   width:334px;
   height:310px;
-}
-
-#doneAdding
-{
-  font-size: 30pt;
-  height: 80px;
-  width: 275px;
-  margin-top: 5%;
-  margin-left: 10%;
-
 }
