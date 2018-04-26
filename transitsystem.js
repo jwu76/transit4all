@@ -2,27 +2,32 @@ $("document").ready(function() {
 
     var one = document.getElementById("one");
     $(one).on("click", function() {
-        var x = document.getElementById("added").value = "$1";
+        var currentVal = parseInt(document.getElementById("added").value.replace(/\$/g, ''), 10) +1;
+        var x = document.getElementById("added").value = "$" + currentVal;
+
     });
 
     var five = document.getElementById("five");
     $(five).on("click", function() {
-        var x = document.getElementById("added").value = "$5";
+      var currentVal = parseInt(document.getElementById("added").value.replace(/\$/g, ''), 10) +5;
+      var x = document.getElementById("added").value = "$" + currentVal;
     });
 
     var ten = document.getElementById("ten");
     $(ten).on("click", function() {
-        var x = document.getElementById("added").value = "$10";
+      var currentVal = parseInt(document.getElementById("added").value.replace(/\$/g, ''), 10) +10;
+      var x = document.getElementById("added").value = "$" + currentVal;
     });
 
     var twenty = document.getElementById("twenty");
     $(twenty).on("click", function() {
-        var x = document.getElementById("added").value = "$20";
+      var currentVal = parseInt(document.getElementById("added").value.replace(/\$/g, ''), 10) +20;
+      var x = document.getElementById("added").value = "$" + currentVal;
     });
 
     var cont = document.getElementById("Continue_Tim");
     $(cont).on('click', function() {
-        window.location.href = "./paymentMethod.html";
+        window.location.href = "./reloadPaymentMethod.html";
         var add = document.getElementById("added");
         add.value = "$";
         var total = document.getElementById("total");
@@ -105,19 +110,22 @@ $("document").ready(function() {
 
     var addToCard = document.getElementById("doneAdding");
     $(addToCard).on('click', function() {
-        var total = document.getElementById("total");
-        total.value = "$";
-        var current = document.getElementById("currentInput");
-        var currentValue = current.value;
-        var currentValue2 = currentValue.substring(1);
-        var currentFloat = parseFloat(currentValue2);
-        var adding = document.getElementById("added");
-        var addingValue = adding.value;
-        var addingValue2 = addingValue.substring(1);
-        var addingFloat = parseFloat(addingValue2);
-        var totalAmount = currentFloat + addingFloat;
-        var totalAmountFixed = totalAmount.toFixed(2);
-        console.log(totalAmountFixed);
-        total.value += totalAmountFixed;
+      currentVal = 0;
+      var x = document.getElementById("added").value = "$" + currentVal;
+
+        // var total = document.getElementById("total");
+        // total.value = "$";
+        // var current = document.getElementById("currentInput");
+        // var currentValue = current.value;
+        // var currentValue2 = currentValue.substring(1);
+        // var currentFloat = parseFloat(currentValue2);
+        // var adding = document.getElementById("added");
+        // var addingValue = adding.value;
+        // var addingValue2 = addingValue.substring(1);
+        // var addingFloat = parseFloat(addingValue2);
+        // var totalAmount = currentFloat + addingFloat;
+        // var totalAmountFixed = totalAmount.toFixed(2);
+        // console.log(totalAmountFixed);
+        // total.value += totalAmountFixed;
     });
 });
