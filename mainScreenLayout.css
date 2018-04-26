@@ -142,7 +142,14 @@
   margin-top: 5%;
 }
 
-#Continue_Tim,
+#Continue_Tim
+{
+  height: 80px;
+  width: 300px;
+  margin-top: 36%;
+  /* margin-left: 20px; */
+  font-size: 30pt;
+}
 #Cancel_Tim {
   height: 80px;
   width: 300px;
