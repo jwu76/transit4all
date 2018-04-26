@@ -13,7 +13,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="./mycss.css">
+  <link rel="stylesheet" type="text/css" href="./transitcss.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Continue Screen</title>
 </head>
@@ -21,10 +21,10 @@
 <body style="background-color: rgb(211, 211, 211);">
   <div class="row">
     <div id="home_col_ML" class="col-md-6">
-      <button class="btn btn-primary" style="margin-top:1%; position: relative; left: 10px; height:60px; width:60px" onclick="back()">
+      <button class="btn btn-primary" id="csBack" onclick="back()">
         <i class="material-icons">&#xE317;</i>
       </button>
-      <button type="button" class="btn btn-primary" style="margin-top: 1%; height:60px; width:60px; position:absolute; right:0px;" onclick="location.href='./transitsystem.html'">
+      <button type="button" class="btn btn-primary" id="csHome" onclick="location.href='./transitsystem.html'">
         <h2><span class = "fas fa-home"></span></h2>
       </button>
     </div>
@@ -33,12 +33,12 @@
   </div>
   <div class="row">
     <div class="col-md-6">
-      <img src="./images/reloadablePass2.png" style="position:absolute; margin-top:100px; height: 300px; width: 450px; right:0px">
+      <img src="./images/reloadablePass2.png" id="csReloadablePassImg">
     </div>
     <div class="col-md-6">
       <!-- <input type="text" readonly value = "$ 5" style="position:absolute; margin-top:45%; width:40px;"> -->
-      <h2><span class="badge badge-pill badge-success" style="margin-top:150px; margin-left: 50px; padding:20px 60px; font-size: 18pt">Total: $5.00</span></h2>
-      <button type="button" id="Continue_Tim" class="btn btn-primary" style="padding:30px 60px; margin-top: 10px; margin-left: 50px" onclick="location.href='./paymentMethod.html'">
+      <h2><span class="badge badge-pill badge-success" id="csTotal">Total: $5.00</span></h2>
+      <button type="button" id="Continue_Tim" class="btn btn-primary" onclick="location.href='./paymentMethod.html'">
         <h2><span style="font-size: 24pt">Continue</span></h2>
       </button>
     </div>
