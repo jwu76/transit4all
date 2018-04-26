@@ -6,17 +6,17 @@ $("document").ready(function() {
         var x = document.getElementById("added").value ="$1";
     });
     
-    var one = document.getElementById("five");
+    var five = document.getElementById("five");
     $(five).on("click", function(){
         var x = document.getElementById("added").value ="$5";
     });
 
-    var one = document.getElementById("ten");
+    var ten = document.getElementById("ten");
     $(ten).on("click", function(){
         var x = document.getElementById("added").value ="$10";
     });
 
-    var one = document.getElementById("twenty");
+    var twenty = document.getElementById("twenty");
     $(twenty).on("click", function(){
         var x = document.getElementById("added").value ="$20";
     });
