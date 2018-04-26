@@ -15,9 +15,9 @@
   <script src="timscripts.js"></script>
 
   <script>
-    function back() {
-      window.history.go(-1);
-    }
+  function back() {
+    window.history.go(-1);
+  }
   </script>
 
 
@@ -25,55 +25,50 @@
 </head>
 
 <body>
+  <div class="row">
+    <div id="home_col_ML" class="col-md-6">
+      <button class="btn btn-primary" style="margin-top:1%; position: relative; left: 10px; height:60px; width:60px" onclick="back()">
+        <i class="material-icons">&#xE317;</i>
+      </button>
+      <button type="button" class="btn btn-primary" style="margin-top: 1%; height:60px; width:60px; position:absolute; right:0px;" onclick="location.href='./transitsystem.html'">
+        <h2><span class = "fas fa-home"></span></h2>
+      </button>
+    </div>
+    <div id="back_col_ML" class="col-md-6">
+    </div>
+  </div>
 
-
-
-  <div>
-    <!-- Confirmation Reciept Screen -->
-    <button class="btn btn-primary" style="margin-top:.5%; position: relative; left: 10px; height:60px; width:60px right:0px; padding: 0px 15px" onclick="back()">
-      <i class="material-icons">&#xE317;</i>
-    </button>
-    <button type="button" class="btn btn-primary" style="margin-top: .5%; height:60px; width:60px; position:absolute; left:650px;" onclick="location.href='./transitsystem.html'">
-      <h2><span class = "fas fa-home"></span></h2>
-    </button>
-    <div class="container">
-
-
-
-      <div id="back_col_ML" class="col-md-6">
-      </div>
-      <div class="row">
-        <div style="text-align:center; margin-top: 5%" class="col-md-6" id="firstColumn">
-          <div>
-            <label style=" font-size:36px">Items</label>
-            <div>
-              <textarea style="font-size: 24px; font-weight: bolder; border: 2px solid black; text-align:center;" rows="6" cols="30" readonly>1 Ride Pass x1</textarea>
-            </div>
-          </div>
-        </div>
-
-        <div style="text-align:center" class="col-md-6" id="lastColumn">
-
-          <label style="margin-top:30%; margin-right: 75px; font-size: 48px; ">Price: $5</label>
-        </div>
-      </div>
-      <!-- class="row" -->
-      <div class="row">
-        <div style="text-align:center" class="col-md-6" id="lastColumn">
-          <button style="margin-top:50px;height:150px;width:400px; font-size: 48px " type="button" class="btn btn-primary" onclick="location.href='./transitsystem.html'">Cancel</button>
-        </div>
-        <div style="text-align:center" class="col-md-6" id="lastColumn">
-          <button style="margin-top:50px;height:150px;width:400px; font-size: 48px" type="button" class="btn btn-primary" onclick="location.href='./dispense.html'">Confirm</button>
+  <div class="row">
+    <div style="text-align:center; margin-top: 5%" class="col-md-6" id="firstColumn">
+      <div>
+        <label style=" font-size:36px">Items</label>
+        <div>
+          <textarea style="font-size: 24px; font-weight: bolder; border: 2px solid black; text-align:center;" rows="6" cols="30" readonly>1 Ride Pass x1</textarea>
         </div>
       </div>
     </div>
-    <!-- class="container" -->
+
+    <div style="text-align:center" class="col-md-6" id="lastColumn">
+
+      <label style="margin-top:30%; margin-right: 75px; font-size: 48px; ">Price: $5</label>
+    </div>
   </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- class="row" -->
+  <div class="row">
+    <div style="text-align:center" class="col-md-6" id="lastColumn">
+      <button style="margin-top:50px;height:150px;width:400px; font-size: 48px " type="button" class="btn btn-primary" onclick="location.href='./transitsystem.html'">Cancel</button>
+    </div>
+    <div style="text-align:center" class="col-md-6" id="lastColumn">
+      <button style="margin-top:50px;height:150px;width:400px; font-size: 48px" type="button" class="btn btn-primary" onclick="location.href='./dispense.html'">Confirm</button>
+    </div>
+  </div>
+</div>
+<!-- class="container" -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 
 </html>
