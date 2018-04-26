@@ -29,7 +29,7 @@ $("document").ready(function() {
     $(cont).on('click', function() {
         window.location.href = "./reloadPaymentMethod.html";
         var add = document.getElementById("added");
-        add.value = "$";
+        add.value = "$0";
         var total = document.getElementById("total");
         total.value = "$";
     });
@@ -38,7 +38,7 @@ $("document").ready(function() {
     $(cancel).on('click', function() {
         window.location.href = "./transitsystem.html";
         var add = document.getElementById("added");
-        add.value = "$";
+        add.value = "$0";
         var total = document.getElementById("total");
         total.value = "$";
     });
