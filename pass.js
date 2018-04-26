@@ -75,7 +75,7 @@ $(weekplus).on("click", function() {
     document.getElementById("7DayCost").value = "$" + total.toFixed(2);
 });
 
-$(dayminus).on("click", function() {
+$(weekminus).on("click", function() {
     if (weekticket > 0)
         weekticket--;
     else
