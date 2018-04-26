@@ -1,6 +1,6 @@
 /*transitsystem.html css start*/
 
-#transcard{
+#transcard {
   background-image: url("images/reloadablePass.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -9,7 +9,7 @@
   border: none;
 }
 
-#transticket{
+#transticket {
   background-image: url("images/transitTicket.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -26,70 +26,73 @@
   margin: auto;
 } */
 
-#card, #ticket, #language
-{
+#card,
+#ticket,
+#language {
   text-align: center;
   align-self: center;
 }
 
-#scan{
+#scan {
   font-size: 40px;
   margin: 0 auto;
   margin-top: 5%;
   padding: 50px 100px;
 }
 
-#languageButtons1 button
-{
+#languageButtons1 button {
   padding: 25px 30px;
   font-size: 20pt;
   width: 100%;
   margin-top: 5%;
   margin-right: 2.5%
 }
-#languageButtons2 button
-{
+
+#languageButtons2 button {
   padding: 25px 30px;
   font-size: 20pt;
   width: 100%;
   margin-top: 5%;
   margin-left: 2.5%;
 }
+
 /*transitsystem.html css end*/
 
 /*balance.html css start*/
-#backButton
-{
-  margin-top:1%;
+
+#backButton {
+  margin-top: 1%;
   position: relative;
   left: 10px;
-  height:60px;
-  width:60px;
+  height: 60px;
+  width: 60px;
 }
 
-#homeButton
-{
+#homeButton {
   margin-top: 1%;
-  height:60px;
-  width:60px;
-  position:absolute;
-  right:0px;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: 0px;
 }
 
-#currentForm, #toAddForm, #totalForm
-{
-   margin-top: 8%;
-   margin-left: auto;
+#currentForm,
+#toAddForm,
+#totalForm {
+  margin-top: 8%;
+  margin-left: auto;
 }
 
-#currentLable, #toAddLable, #totalLable
-{
+#currentLable,
+#toAddLable,
+#totalLable {
   font-size: 24pt;
   text-align: left;
 }
 
-#currentInput, #added, #total
-{
+#currentInput,
+#added,
+#total {
   height: 50px;
   width: 300px;
   font-size: 18pt;
@@ -109,21 +112,22 @@
   font-size: 20pt;
   text-align: center;
 } */
-#currentCol, #toAddCol, #totalCol
-{
+
+#currentCol,
+#toAddCol,
+#totalCol {
   text-align: center;
 }
 
-#toAddButtons1 button
-{
+#toAddButtons1 button {
   padding: 30px 52px;
   font-size: 20pt;
   width: 100%;
   margin-top: 5%;
   margin-right: 2.5%;
 }
-#toAddButtons2 button
-{
+
+#toAddButtons2 button {
   padding: 30px 52px;
   font-size: 20pt;
   width: 100%;
@@ -131,21 +135,20 @@
   margin-left: 2.5%;
 }
 
-#doneAdding
-{
+#doneAdding {
   font-size: 30pt;
   height: 80px;
   width: 300px;
   margin-top: 5%;
 }
 
-#Continue_Tim, #Cancel_Tim
-{
-   height: 80px;
-   width: 300px;
-   margin-top: 5%;
-   /* margin-left: 20px; */
-   font-size: 30pt;
+#Continue_Tim,
+#Cancel_Tim {
+  height: 80px;
+  width: 300px;
+  margin-top: 5%;
+  /* margin-left: 20px; */
+  font-size: 30pt;
 }
 
 /*balance.html css end*/
@@ -155,57 +158,56 @@
   border:1px solid #000000;
 } */
 
-#balances{
+#balances {
   margin-top: 20px;
   width: 300px;
 }
 
-#balance{
+#balance {
   font: 50px;
   width: 400px;
-  border:1px solid #000000;
+  border: 1px solid #000000;
 }
 
-.form-group{
+.form-group {
   margin-top: 40px;
-  margin-left:30px;
+  margin-left: 30px;
 }
 
-#numpad{
+#numpad {
   margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
-#continue{
+#continue {
   height: 50px;
   width: 150px;
   margin-top: 500px;
 }
 
-#thankyou{
+#thankyou {
   margin-top: 10%;
   margin-left: 35%;
   font: Arial;
   font-size: 5em;
 }
 
-#print, #exit
-{
+#print,
+#exit {
   margin-top: 50px;
   font-size: 24pt;
   width: 330px;
   margin-left: 35%;
 }
 
-#dispense
-{
+#dispense {
   background-image: url("images/ticketDispensing.png");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
-  background-size:100%;
-  margin-left:35%;
-  margin-top:5%;
-  width:334px;
-  height:310px;
+  background-size: 100%;
+  margin-left: 35%;
+  margin-top: 5%;
+  width: 334px;
+  height: 310px;
 }

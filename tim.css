@@ -7,60 +7,62 @@
 }
 
 div#keyboard {
-  width:400px;
-  height:300px;
-  margin:0 auto;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
 }
+
 ol.keys {
-  list-style-type:none;
+  list-style-type: none;
 }
 
 ol.keys li {
-  width:33%;
-  display:block;
+  width: 33%;
+  display: block;
   text-align: center;
-  height:2em;
-  float: left;;
-  font-size:40px;
-  font-family:sans-serif;
-  padding-top:.3em;
+  height: 2em;
+  float: left;
+
+  font-size: 40px;
+  font-family: sans-serif;
+  padding-top: .3em;
   padding-right: .3em;
-  border:1px solid rgb(100,100,100);
-  color:white;
-  background-color:rgba(0,0,0,.8);
+  border: 1px solid rgb(100, 100, 100);
+  color: white;
+  background-color: rgba(0, 0, 0, .8);
 }
 
 ol.keys li:hover {
-  cursor:pointer;
-}
-ol.keys li:active {
-  background-color:rgb(200,200,200);
-  color:#000;
+  cursor: pointer;
 }
 
-#Continue_Tim
-{
+ol.keys li:active {
+  background-color: rgb(200, 200, 200);
+  color: #000;
+}
+
+#Continue_Tim {
   font-size: 24px;
 }
 
-.disabled
-{
+.disabled {
   pointer-events: none;
 }
 
-#myPsw
-{
-  font-size:80pt;
-  width:240px;
-  height:100px;
-  text-align:center;
+#myPsw {
+  font-size: 80pt;
+  width: 240px;
+  height: 100px;
+  text-align: center;
   margin-top: 20%;
   margin-bottom: 20px;
 }
-#clear, #tenter, #tcancel
-{
-   margin-bottom: 20px;
-   font-size:30px;
-   width:240px;
-   height:60px;
+
+#clear,
+#tenter,
+#tcancel {
+  margin-bottom: 20px;
+  font-size: 30px;
+  width: 240px;
+  height: 60px;
 }

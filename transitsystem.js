@@ -1,43 +1,42 @@
-
 $("document").ready(function() {
 
     var one = document.getElementById("one");
-    $(one).on("click", function(){
-        var x = document.getElementById("added").value ="$1";
+    $(one).on("click", function() {
+        var x = document.getElementById("added").value = "$1";
     });
-    
+
     var five = document.getElementById("five");
-    $(five).on("click", function(){
-        var x = document.getElementById("added").value ="$5";
+    $(five).on("click", function() {
+        var x = document.getElementById("added").value = "$5";
     });
 
     var ten = document.getElementById("ten");
-    $(ten).on("click", function(){
-        var x = document.getElementById("added").value ="$10";
+    $(ten).on("click", function() {
+        var x = document.getElementById("added").value = "$10";
     });
 
     var twenty = document.getElementById("twenty");
-    $(twenty).on("click", function(){
-        var x = document.getElementById("added").value ="$20";
+    $(twenty).on("click", function() {
+        var x = document.getElementById("added").value = "$20";
     });
 
-var cont = document.getElementById("Continue_Tim");
-$(cont).on('click', function(){
-    window.location.href = "./paymentMethod.html";
-    var add = document.getElementById("added");
-    add.value = "$";
-    var total = document.getElementById("total");
-    total.value = "$";
-});
+    var cont = document.getElementById("Continue_Tim");
+    $(cont).on('click', function() {
+        window.location.href = "./paymentMethod.html";
+        var add = document.getElementById("added");
+        add.value = "$";
+        var total = document.getElementById("total");
+        total.value = "$";
+    });
 
-var cancel = document.getElementById("Cancel_Tim");
-$(cancel).on('click', function(){
-    window.location.href = "./transitsystem.html";
-    var add = document.getElementById("added");
-    add.value = "$";
-    var total = document.getElementById("total");
-    total.value = "$";
-});
+    var cancel = document.getElementById("Cancel_Tim");
+    $(cancel).on('click', function() {
+        window.location.href = "./transitsystem.html";
+        var add = document.getElementById("added");
+        add.value = "$";
+        var total = document.getElementById("total");
+        total.value = "$";
+    });
     // var two = document.getElementById("two");
     // $(two).on("click", function(){
     //     var x = document.getElementById("added").value +="2";
@@ -93,33 +92,32 @@ $(cancel).on('click', function(){
     //     var x = document.getElementById("added").value ="$";
     // });
 
-//number pad functions
+    //number pad functions
     var i = 0;
-$('.keys').on('click', 'li', function() {
-  if(i<4){
-    var num = $(this).data('number')
+    $('.keys').on('click', 'li', function() {
+        if (i < 4) {
+            var num = $(this).data('number')
+            $('#myPsw').val($('#myPsw').val() + num);
+            console.log($('#myPsw').val.length);
+        }
+        i++;
+    });
 
-$('#myPsw').val($('#myPsw').val() + num);
-    console.log($('#myPsw').val.length);}
-  i++;});
-
-var addToCard = document.getElementById("doneAdding");
-$(addToCard).on('click', function(){
-  var total= document.getElementById("total");
-  total.value = "$";
-  var current = document.getElementById("currentInput");
-  var currentValue = current.value;
-  var currentValue2 = currentValue.substring(1);
-  var currentFloat = parseFloat(currentValue2);
-  var adding = document.getElementById("added");
-  var addingValue = adding.value;
-  var addingValue2 = addingValue.substring(1);
-  var addingFloat = parseFloat(addingValue2);
-  var totalAmount = currentFloat + addingFloat;
-  var totalAmountFixed = totalAmount.toFixed(2);
-  console.log(totalAmountFixed);
-  total.value += totalAmountFixed;
-});
-
-
+    var addToCard = document.getElementById("doneAdding");
+    $(addToCard).on('click', function() {
+        var total = document.getElementById("total");
+        total.value = "$";
+        var current = document.getElementById("currentInput");
+        var currentValue = current.value;
+        var currentValue2 = currentValue.substring(1);
+        var currentFloat = parseFloat(currentValue2);
+        var adding = document.getElementById("added");
+        var addingValue = adding.value;
+        var addingValue2 = addingValue.substring(1);
+        var addingFloat = parseFloat(addingValue2);
+        var totalAmount = currentFloat + addingFloat;
+        var totalAmountFixed = totalAmount.toFixed(2);
+        console.log(totalAmountFixed);
+        total.value += totalAmountFixed;
+    });
 });
