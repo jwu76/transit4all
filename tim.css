@@ -66,3 +66,21 @@ ol.keys li:active {
   width: 240px;
   height: 60px;
 }
+
+#timBack
+{
+  margin-top:1%;
+  position: relative;
+  left: 10px;
+  height:70px;
+  width:70px;
+}
+
+#timHome
+{
+   margin-top: 1%;
+   height:70px;
+   width:70px;
+   position:absolute;
+   right:0px;
+}

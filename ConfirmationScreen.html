@@ -27,11 +27,11 @@
 <body style="background-color: rgb(211, 211, 211);">
   <div class="row">
     <div id="home_col_ML" class="col-md-6">
-      <button class="btn btn-primary" style="margin-top:1%; position: relative; left: 10px; height:60px; width:60px" onclick="back()">
-        <i class="material-icons">&#xE317;</i>
+      <button class="btn btn-primary" id="timBack" onclick="back()">
+        <i class="material-icons" style="font-size: 26pt;">&#xE317;</i>
       </button>
-      <button type="button" class="btn btn-primary" style="margin-top: 1%; height:60px; width:60px; position:absolute; right:0px;" onclick="location.href='./transitsystem.html'">
-        <h2><span class = "fas fa-home"></span></h2>
+      <button type="button" class="btn btn-primary" id="timHome" onclick="location.href='./transitsystem.html'">
+        <h2><span class = "fas fa-home" style="font-size: 26pt;"></span></h2>
       </button>
     </div>
     <div id="back_col_ML" class="col-md-6">
@@ -41,9 +41,9 @@
   <div class="row">
     <div style="text-align:center; margin-top: 5%" class="col-md-6" id="firstColumn">
       <div>
-        <label style=" font-size:36px">Items</label>
+        <label style="font-size:36px">Items</label>
         <div>
-          <textarea style="font-size: 24px; font-weight: bolder; border: 2px solid black; text-align:center;" rows="6" cols="30" readonly>1 Ride Pass x1</textarea>
+          <textarea id="timItems" style="font-size: 24px; font-weight: bolder; border: 2px solid black; text-align:center;" rows="6" cols="30" readonly>1 Ride Pass x1</textarea>
         </div>
       </div>
     </div>
