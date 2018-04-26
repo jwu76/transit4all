@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script>
-    function back() {
-      window.history.go(-1);
-    }
+  function back() {
+    window.history.go(-1);
+  }
   </script>
 
   <!-- Bootstrap CSS -->
@@ -16,82 +16,86 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="./mycss.css">
+  <link rel="stylesheet" type="text/css" href="./transitcss.css">
   <title>Pass Screen</title>
 </head>
 
 <body style="background-color: rgb(211, 211, 211);">
-  <div>
-    <div id="headerRow_ML" class="row">
-      <div id="OneRideCol_ML" class="col-4">
-        <button class="btn btn-primary" style="margin-top:1%; position: relative; left: 10px; height:60px; width:60px" onclick="back()">
-          <i class="material-icons">&#xE317;</i>
-        </button><br>
-        <img src="./images/oneRidePass2.png" style="margin-top: 20px; height: 200px; width: 300px; margin-left: 20px">
-        <br><br>
-
-        <div class="button-container" style="width:120px; height:120px; position:relative; left:60px">
-          <input id="oneRideCost" type="input" name="cost" readonly value="$" style="width: 200px;height: 40px;position:absolute; font-size: 12pt"></input><br><br><br>
-          <button id="oneRidePlus" onclick="oneRidePlus" type="button" class="btn btn-primary" style="height:60px; width:60px; margin-bottom: 20px">
-            <h2><span class = "fas fa-plus"></span></h2>
-          </button>
-
-          <button id="oneRideMinus" onclick="oneRideMinus" type="button" class="btn btn-primary" style="height:60px; width:60px">
-            <h2><span class = "fas fa-minus" ></span></h2>
-            <input type="input" name="amount" id="onerideamount" readonly value="" style ="width:120px; height:140px; position:relative; left:70px; top:-120px; font-size: 16pt">
-            <h3><span class ="form-control-feedback" readonly style = "position:absolute; top:-10px; z-index: 2; color: red;"></span></h3>
-          </button>
-        </div>
-      </div>
-
-      <div id="OneDayCol_ML" class="col-4">
-        <button type="button" class="btn btn-primary" style="margin-top:1%; position: relative; left: 150px; height:60px; width:60px" onclick="location.href='./transitsystem.html'">
-          <h2><span class = "fas fa-home"></span></h2>
-        </button><br>
-        <img src="./images/oneDayPass2.png" style="margin-top:20px; height: 200px; width: 300px; margin-left: 20px"><br><br>
-
-        <div class="button-container" style="width:120px; height:120px; position:relative; left:60px;">
-          <input type="input" name="cost" id="oneDayCost" readonly value="$" style="width:200px; height: 40px; position:absolute;font-size: 12pt"></input><br><br><br>
-          <button type="button" class="btn btn-primary" id="oneDayPlus" style="height:60px; width:60px; margin-bottom: 20px">
-            <h2><span class = "fas fa-plus"></span></h2>
-          </button>
-          <button type="button" class="btn btn-primary" id="oneDayMinus" style="height:60px; width:60px">
-            <h2><span class = "fas fa-minus"> </span> </h2>
-            <input type="input" name="amount" id="oneDayAmount" readonly value="" style ="width:120px; height:140px; position:relative; left:70px; top:-120px; font-size: 16pt">
-          </button>
-        </div>
-
-        <button type="button" class="btn btn-primary" style="padding:30px 60px; top: 120px; position: relative; left: 50px " onclick="location.href='./paymentMethod.html'">
-          <h2><span style="font-size: 24pt">Continue</span></h2>
-        </button>
-      </div>
-
-
-      <div id="SevenDayCol_ML" class="col-4">
-        <img src="./images/7DayPass2.png" style="margin-top: 80px; height: 200px; width: 300px; margin-left: 20px"><br><br>
-
-        <div class="button-container" style="width:120px; height:120px; position:absolute; left:60px;">
-          <input type="input" name="cost" id="7DayCost" readonly value="$" style="width:200px; height: 40px; position:absolute; font-size: 12pt"></input><br><br><br>
-          <button type="button" class="btn btn-primary" id="7DayPlus" style="height:60px; width:60px; margin-bottom: 20px">
-            <h2><span class = "fas fa-plus"></span></h2>
-          </button>
-          <button type="button" class="btn btn-primary" id="7DayMinus" style="height:60px; width:60px">
-            <h2><span class = "fas fa-minus"> </span> </h2>
-            <input type="input" name="amount"  id="7DayAmount" readonly value="" style ="width:120px; height:140px; position:relative; left:70px; top:-120px; font-size: 16pt">
-          </button>
-        </div>
-
-      </div>
+  <div class="row">
+    <div id="home_col_ML" class="col-md-6">
+      <button class="btn btn-primary" id="csBack" onclick="back()">
+        <i class="material-icons" style="font-size: 26pt;">&#xE317;</i>
+      </button>
+      <button type="button" class="btn btn-primary" id="csHome" onclick="location.href='./transitsystem.html'">
+        <h2><span class = "fas fa-home" style="font-size: 26pt;"></span></h2>
+      </button>
+    </div>
+    <div id="back_col_ML" class="col-md-6">
     </div>
   </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  <script src="pass.js">
-  </script>
+  <div class="row">
+    <div id="OneRideCol_ML" class="col-4">
+      <img src="./images/oneRidePass2.png" style="margin-top: 20px; height: 200px; width: 300px; margin-left: 20px">
+      <br><br>
+      <div class="button-container" style="width:120px; height:120px; position:relative; left:60px">
+        <input id="oneRideCost" type="input" name="cost" readonly value="$" style="width: 200px;height: 40px;position:absolute; font-size: 12pt"></input><br><br><br>
+        <button id="oneRidePlus" onclick="oneRidePlus" type="button" class="btn btn-primary" style="height:60px; width:60px; margin-bottom: 20px">
+          <h2><span class = "fas fa-plus" ></span></h2>
+        </button>
+
+        <button id="oneRideMinus" onclick="oneRideMinus" type="button" class="btn btn-primary" style="height:60px; width:60px">
+          <h2><span class = "fas fa-minus" ></span></h2>
+          <input type="input" name="amount" id="onerideamount" readonly value="" style ="width:120px; height:140px; position:relative; left:70px; top:-120px; font-size: 16pt">
+          <h3><span class ="form-control-feedback" readonly style = "position:absolute; top:-10px; z-index: 2; color: red;"></span></h3>
+        </button>
+      </div>
+    </div>
+
+    <div id="OneDayCol_ML" class="col-4">
+      <img src="./images/oneDayPass2.png" style="margin-top:20px; height: 200px; width: 300px; margin-left: 20px">
+      <br><br>
+      <div class="button-container" style="width:120px; height:120px; position:relative; left:60px;">
+        <input type="input" name="cost" id="oneDayCost" readonly value="$" style="width:200px; height: 40px; position:absolute;font-size: 12pt"></input><br><br><br>
+        <button type="button" class="btn btn-primary" id="oneDayPlus" style="height:60px; width:60px; margin-bottom: 20px">
+          <h2><span class = "fas fa-plus"></span></h2>
+        </button>
+        <button type="button" class="btn btn-primary" id="oneDayMinus" style="height:60px; width:60px">
+          <h2><span class = "fas fa-minus"> </span> </h2>
+          <input type="input" name="amount" id="oneDayAmount" readonly value="" style ="width:120px; height:140px; position:relative; left:70px; top:-120px; font-size: 16pt">
+        </button>
+      </div>
+
+      <button type="button" class="btn btn-primary" style="padding:30px 60px; top: 100px; position: relative; left: 50px " onclick="location.href='./paymentMethod.html'">
+        <h2><span style="font-size: 24pt">Continue</span></h2>
+      </button>
+    </div>
+
+
+    <div id="SevenDayCol_ML" class="col-4">
+      <img src="./images/7DayPass2.png" style="margin-top: 20px; height: 200px; width: 300px; margin-left: 20px">
+      <br><br>
+      <div class="button-container" style="width:120px; height:120px; position:absolute; left:60px;">
+        <input type="input" name="cost" id="7DayCost" readonly value="$" style="width:200px; height: 40px; position:absolute; font-size: 12pt"></input><br><br><br>
+        <button type="button" class="btn btn-primary" id="7DayPlus" style="height:60px; width:60px; margin-bottom: 20px">
+          <h2><span class = "fas fa-plus"></span></h2>
+        </button>
+        <button type="button" class="btn btn-primary" id="7DayMinus" style="height:60px; width:60px">
+          <h2><span class = "fas fa-minus"> </span> </h2>
+          <input type="input" name="amount"  id="7DayAmount" readonly value="" style ="width:120px; height:140px; position:relative; left:70px; top:-120px; font-size: 16pt">
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="pass.js">
+</script>
 </body>
 
 </html>
